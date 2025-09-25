@@ -7,25 +7,25 @@ export class Weather {
         this.currentWeather = this.generateRandomWeather();
     }
 
-    // 生成随机天气
+    // Generate random weather
     private generateRandomWeather(): WeatherType {
         const weatherTypes = Object.values(WeatherType);
         const randomIndex = Math.floor(Math.random() * weatherTypes.length);
         return weatherTypes[randomIndex];
     }
 
-    // 获取当前天气
+    // Get current weather
     getCurrentWeather(): WeatherType {
         return this.currentWeather;
     }
 
-    // 生成新的一天的天气
+    // Generate new day weather
     generateNewDayWeather(): WeatherType {
         this.currentWeather = this.generateRandomWeather();
         return this.currentWeather;
     }
 
-    // 根据天气获取销售倍数
+    // Get sales multiplier based on weather
     getSalesMultiplier(): number {
         switch (this.currentWeather) {
             case WeatherType.COLD:
@@ -41,19 +41,19 @@ export class Weather {
         }
     }
 
-    // 获取天气描述
+    // Get weather description
     getWeatherDescription(): string {
         switch (this.currentWeather) {
             case WeatherType.COLD:
-                return "寒冷 - 很少有人想喝柠檬水";
+                return "Cold - Few people want lemonade";
             case WeatherType.COOL:
-                return "凉爽 - 一些人可能会买柠檬水";
+                return "Cool - Some people might buy lemonade";
             case WeatherType.WARM:
-                return "温暖 - 正常的柠檬水销售天气";
+                return "Warm - Normal lemonade selling weather";
             case WeatherType.HOT:
-                return "炎热 - 人们渴望清凉的柠檬水！";
+                return "Hot - People crave refreshing lemonade!";
             default:
-                return "未知天气";
+                return "Unknown weather";
         }
     }
 }

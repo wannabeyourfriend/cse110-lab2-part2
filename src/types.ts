@@ -1,4 +1,4 @@
-// 天气类型枚举
+// Weather type enum
 export enum WeatherType {
     COLD = "cold",
     COOL = "cool",
@@ -6,7 +6,7 @@ export enum WeatherType {
     HOT = "hot"
 }
 
-// 供应品类型
+// Supply types
 export interface Supplies {
     cups: number;
     ice: number;
@@ -14,7 +14,7 @@ export interface Supplies {
     sugar: number;
 }
 
-// 供应品价格
+// Supply prices
 export interface SupplyPrices {
     cups: number;
     ice: number;
@@ -22,7 +22,7 @@ export interface SupplyPrices {
     sugar: number;
 }
 
-// 柠檬水配方
+// Lemonade recipe
 export interface Recipe {
     cupsPerServing: number;
     icePerServing: number;
@@ -31,7 +31,7 @@ export interface Recipe {
     pricePerCup: number;
 }
 
-// 每日销售结果
+// Daily sales result
 export interface DailySales {
     cupsSold: number;
     revenue: number;

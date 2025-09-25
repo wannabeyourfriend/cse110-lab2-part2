@@ -1,76 +1,76 @@
-# 柠檬水摊位模拟游戏
+# Lemonade Stand Simulation Game
 
-一个使用TypeScript实现的控制台柠檬水摊位模拟游戏。
+A console-based lemonade stand simulation game implemented using TypeScript.
 
-## 功能特性
+## Features
 
-- 🍋 **面向对象设计**: 使用良好的OOP原则构建
-- 🌤️ **天气系统**: 不同天气影响销售量
-- 📦 **库存管理**: 管理杯子、冰块、柠檬和糖的库存
-- 📋 **配方定制**: 自定义柠檬水配方和价格
-- 💰 **经济系统**: 管理现金流和供应品采购
-- 🎮 **交互式游戏**: 基于控制台的用户界面
+- **Object-Oriented Design**: Built using good OOP principles
+- **Weather System**: Different weather conditions affect sales volume
+- **Inventory Management**: Manage inventory of cups, ice, lemons, and sugar
+- **Recipe Customization**: Customize lemonade recipes and prices
+- **Economic System**: Manage cash flow and supply purchasing
+- **Interactive Gameplay**: Console-based user interface
 
-## 安装和运行
+## Installation and Running
 
-### 前提条件
-- Node.js (版本 14 或更高)
+### Prerequisites
+- Node.js (version 14 or higher)
 - npm
 
-### 安装依赖
+### Install Dependencies
 ```bash
 npm install
 ```
 
-### 运行游戏
+### Run the Game
 ```bash
 npm start
 ```
 
-或者分步运行：
+Or run step by step:
 ```bash
 npm run build
 node dist/main.js
 ```
 
-### 开发模式
+### Development Mode
 ```bash
 npm run dev
 ```
 
-## 游戏玩法
+## How to Play
 
-1. **开始游戏**: 你有$20的启动资金
-2. **查看天气**: 每天都有不同的天气，影响销售
-3. **设置配方**: 决定每杯柠檬水需要多少原料和售价
-4. **购买供应品**: 根据当日价格购买杯子、冰块、柠檬和糖
-5. **销售结果**: 查看当天售出多少杯和收入
-6. **继续经营**: 决定是否继续下一天的经营
+1. **Start Game**: You begin with $20 starting capital
+2. **Check Weather**: Each day has different weather that affects sales
+3. **Set Recipe**: Decide how many ingredients each cup of lemonade needs and the selling price
+4. **Buy Supplies**: Purchase cups, ice, lemons, and sugar based on daily prices
+5. **Sales Results**: View how many cups were sold and the revenue for the day
+6. **Continue Business**: Decide whether to continue operating the next day
 
-## 项目结构
+## Project Structure
 
 ```
 src/
-├── main.ts           # 游戏入口点
-├── types.ts          # 类型定义
-├── LemonadeStand.ts  # 主要游戏逻辑
-├── Inventory.ts      # 库存管理
-├── Weather.ts        # 天气系统
-└── GameController.ts # 用户交互控制
+├── main.ts           # Game entry point
+├── types.ts          # Type definitions
+├── LemonadeStand.ts  # Main game logic
+├── Inventory.ts      # Inventory management
+├── Weather.ts        # Weather system
+└── GameController.ts # User interaction control
 ```
 
-## 技术栈
+## Technology Stack
 
-- **TypeScript**: 主要编程语言
-- **Node.js**: 运行环境
-- **readline**: 控制台输入处理
+- **TypeScript**: Main programming language
+- **Node.js**: Runtime environment
+- **readline**: Console input handling
 
-## 开发说明
+## Development Notes
 
-这个项目是CSE110课程的作业，重点学习：
-- TypeScript语言特性
-- 面向对象编程原则
-- Node.js控制台应用开发
-- 版本控制和提交管理
+This project is an assignment for CSE110 course, focusing on learning:
+- TypeScript language features
+- Object-oriented programming principles
+- Node.js console application development
+- Version control and commit management
 
-查看 `test-session.md` 了解详细的游戏会话示例和设计决策说明。
+See `test-session.md` for detailed game session examples and design decision explanations.

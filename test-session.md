@@ -1,140 +1,140 @@
-# 柠檬水摊位模拟游戏 - 测试会话日志
+# Lemonade Stand Simulation Game - Test Session Log
 
-## 游戏概述
-这是一个使用TypeScript实现的柠檬水摊位模拟游戏，玩家需要管理库存、制定配方、购买供应品并根据天气条件销售柠檬水。
+## Game Overview
+This is a lemonade stand simulation game implemented using TypeScript, where players need to manage inventory, create recipes, purchase supplies, and sell lemonade based on weather conditions.
 
-## 游戏特性
-- **面向对象设计**: 使用了多个类来管理不同的游戏组件
-- **天气系统**: 影响每日销售量的天气变化
-- **库存管理**: 跟踪杯子、冰块、柠檬和糖的库存
-- **配方定制**: 玩家可以调整柠檬水配方和价格
-- **经济系统**: 管理现金流和供应品成本
+## Game Features
+- **Object-Oriented Design**: Uses multiple classes to manage different game components
+- **Weather System**: Weather changes that affect daily sales
+- **Inventory Management**: Track inventory of cups, ice, lemons, and sugar
+- **Recipe Customization**: Players can adjust lemonade recipes and prices
+- **Economic System**: Manage cash flow and supply costs
 
-## 典型游戏会话示例
+## Typical Game Session Example
 
 ```
-🍋 欢迎来到柠檬水摊位模拟游戏！ 🍋
-你有 $20 的启动资金。
-目标：通过销售柠檬水赚钱！
+Welcome to the Lemonade Stand Simulation Game!
+You have $20 starting capital.
+Goal: Make money by selling lemonade!
 =====================================
 
-📅 第 1 天 | 现金: $20.00 | 库存: 杯子 0, 冰块 0, 柠檬 0, 糖 0
-🌤️  天气: 温暖 - 正常的柠檬水销售天气
-📋 当前配方: 每杯需要 1 杯子, 2 冰块, 1 柠檬, 1 糖
-💰 售价: $0.25 每杯
+Day 1 | Cash: $20.00 | Inventory: Cups 0, Ice 0, Lemons 0, Sugar 0
+Weather: Warm - Normal lemonade selling weather
+Current recipe: Each cup needs 1 cups, 2 ice, 1 lemons, 1 sugar
+Price: $0.25 per cup
 
-🏪 今日供应品价格:
-   杯子: $0.025 每个
-   冰块: $0.012 每个
-   柠檬: $0.041 每个
-   糖:   $0.028 每个
+Today's supply prices:
+   Cups: $0.025 each
+   Ice: $0.012 each
+   Lemons: $0.041 each
+   Sugar: $0.028 each
 
-是否要修改配方？(y/n): n
-💰 你有 $20.00
-库存: 杯子 0, 冰块 0, 柠檬 0, 糖 0
-购买多少个杯子？: 50
-购买多少个冰块？: 100
-购买多少个柠檬？: 50
-购买多少个糖？: 50
-💵 总成本: $6.55
-✅ 购买成功！
-库存: 杯子 50, 冰块 100, 柠檬 50, 糖 50
+Do you want to change the recipe? (y/n): n
+You have $20.00
+Inventory: Cups 0, Ice 0, Lemons 0, Sugar 0
+How many cups to buy?: 50
+How many ice to buy?: 100
+How many lemons to buy?: 50
+How many sugar to buy?: 50
+Total cost: $6.55
+Purchase successful!
+Inventory: Cups 50, Ice 100, Lemons 50, Sugar 50
 
-📊 今日销售结果:
-🥤 售出杯数: 18
-💰 收入: $4.50
-📦 使用的供应品: 杯子 18, 冰块 36, 柠檬 18, 糖 18
-💵 当前现金: $17.95
+Today's sales result:
+Cups sold: 18
+Revenue: $4.50
+Supplies used: Cups 18, Ice 36, Lemons 18, Sugar 18
+Current cash: $17.95
 
-继续下一天？(y/n): y
+Continue to next day? (y/n): y
 
-📅 第 2 天 | 现金: $17.95 | 库存: 杯子 32, 冰块 64, 柠檬 32, 糖 32
-🌤️  天气: 炎热 - 人们渴望清凉的柠檬水！
-📋 当前配方: 每杯需要 1 杯子, 2 冰块, 1 柠檬, 1 糖
-💰 售价: $0.25 每杯
+Day 2 | Cash: $17.95 | Inventory: Cups 32, Ice 64, Lemons 32, Sugar 32
+Weather: Hot - People crave refreshing lemonade!
+Current recipe: Each cup needs 1 cups, 2 ice, 1 lemons, 1 sugar
+Price: $0.25 per cup
 
-🏪 今日供应品价格:
-   杯子: $0.023 每个
-   冰块: $0.014 每个
-   柠檬: $0.039 每个
-   糖:   $0.025 每个
+Today's supply prices:
+   Cups: $0.023 each
+   Ice: $0.014 each
+   Lemons: $0.039 each
+   Sugar: $0.025 each
 
-是否要修改配方？(y/n): y
+Do you want to change the recipe? (y/n): y
 
-📝 修改配方:
-每杯需要多少个杯子？(当前: 1): 1
-每杯需要多少个冰块？(当前: 2): 3
-每杯需要多少个柠檬？(当前: 1): 1
-每杯需要多少个糖？(当前: 1): 1
-每杯售价多少？(当前: $0.25): 0.35
-✅ 配方已更新！
+Change recipe:
+How many cups per serving? (current: 1): 1
+How many ice per serving? (current: 2): 3
+How many lemons per serving? (current: 1): 1
+How many sugar per serving? (current: 1): 1
+Price per cup? (current: $0.25): 0.35
+Recipe updated!
 
-💰 你有 $17.95
-库存: 杯子 32, 冰块 64, 柠檬 32, 糖 32
-购买多少个杯子？: 20
-购买多少个冰块？: 60
-购买多少个柠檬？: 20
-购买多少个糖？: 20
-💵 总成本: $2.54
-✅ 购买成功！
-库存: 杯子 52, 冰块 124, 柠檬 52, 糖 52
+You have $17.95
+Inventory: Cups 32, Ice 64, Lemons 32, Sugar 32
+How many cups to buy?: 20
+How many ice to buy?: 60
+How many lemons to buy?: 20
+How many sugar to buy?: 20
+Total cost: $2.54
+Purchase successful!
+Inventory: Cups 52, Ice 124, Lemons 52, Sugar 52
 
-📊 今日销售结果:
-🥤 售出杯数: 31
-💰 收入: $10.85
-📦 使用的供应品: 杯子 31, 冰块 93, 柠檬 31, 糖 31
-💵 当前现金: $26.26
+Today's sales result:
+Cups sold: 31
+Revenue: $10.85
+Supplies used: Cups 31, Ice 93, Lemons 31, Sugar 31
+Current cash: $26.26
 
-继续下一天？(y/n): n
-感谢游玩！
+Continue to next day? (y/n): n
+Thanks for playing!
 ```
 
-## 设计决策说明
+## Design Decision Explanation
 
-### 1. 类结构设计
-- **LemonadeStand**: 主要游戏逻辑类，管理整体状态
-- **Inventory**: 专门处理库存管理，遵循单一职责原则
-- **Weather**: 独立的天气系统，影响销售
-- **GameController**: 处理用户交互，分离UI逻辑
+### 1. Class Structure Design
+- **LemonadeStand**: Main game logic class, manages overall state
+- **Inventory**: Specialized inventory management, follows single responsibility principle
+- **Weather**: Independent weather system, affects sales
+- **GameController**: Handles user interaction, separates UI logic
 
-### 2. TypeScript特性使用
-- **接口定义**: 使用interfaces定义数据结构，提供类型安全
-- **枚举**: 使用enum定义天气类型，提高代码可读性
-- **类型注解**: 所有方法和属性都有明确的类型定义
-- **ES模块**: 使用现代的import/export语法
+### 2. TypeScript Features Usage
+- **Interface Definition**: Uses interfaces to define data structures, provides type safety
+- **Enums**: Uses enum to define weather types, improves code readability
+- **Type Annotations**: All methods and properties have clear type definitions
+- **ES Modules**: Uses modern import/export syntax
 
-### 3. 游戏平衡设计
-- **天气影响**: 不同天气对销售的影响系数不同
-- **供应品价格**: 每日价格有随机波动，增加策略性
-- **配方系统**: 玩家可以调整配方来优化成本和销售
+### 3. Game Balance Design
+- **Weather Impact**: Different weather has different impact coefficients on sales
+- **Supply Prices**: Daily prices have random fluctuations, adding strategy
+- **Recipe System**: Players can adjust recipes to optimize costs and sales
 
-## TypeScript vs Java 比较
+## TypeScript vs Java Comparison
 
-### 相似之处:
-- 都支持面向对象编程
-- 都有强类型系统
-- 都支持接口和类
-- 都有良好的IDE支持
+### Similarities:
+- Both support object-oriented programming
+- Both have strong type systems
+- Both support interfaces and classes
+- Both have good IDE support
 
-### 差异:
-- **编译目标**: TypeScript编译为JavaScript，Java编译为字节码
-- **运行环境**: TypeScript运行在JavaScript引擎上，更灵活
-- **类型系统**: TypeScript的类型系统更灵活，支持联合类型、可选属性等
-- **语法**: TypeScript语法更接近现代JavaScript，更简洁
-- **生态系统**: TypeScript可以直接使用npm生态系统
+### Differences:
+- **Compilation Target**: TypeScript compiles to JavaScript, Java compiles to bytecode
+- **Runtime Environment**: TypeScript runs on JavaScript engines, more flexible
+- **Type System**: TypeScript's type system is more flexible, supports union types, optional properties, etc.
+- **Syntax**: TypeScript syntax is closer to modern JavaScript, more concise
+- **Ecosystem**: TypeScript can directly use npm ecosystem
 
-## 学到的TypeScript知识
+## TypeScript Knowledge Learned
 
-1. **模块系统**: 学会了ES模块的使用和配置
-2. **异步编程**: 使用Promise和async/await处理用户输入
-3. **类型定义**: 创建和使用接口、枚举等类型定义
-4. **编译配置**: 配置tsconfig.json和package.json
-5. **Node.js集成**: 使用readline模块处理控制台输入
+1. **Module System**: Learned to use and configure ES modules
+2. **Asynchronous Programming**: Using Promise and async/await to handle user input
+3. **Type Definition**: Creating and using interfaces, enums, and other type definitions
+4. **Compilation Configuration**: Configuring tsconfig.json and package.json
+5. **Node.js Integration**: Using readline module to handle console input
 
-## 可能的改进
+## Possible Improvements
 
-1. **数据持久化**: 添加保存/加载游戏功能
-2. **更多事件**: 添加随机事件影响游戏
-3. **图形界面**: 使用Web技术创建图形界面
-4. **多人模式**: 支持多个玩家竞争
-5. **更复杂的经济系统**: 添加贷款、投资等功能
+1. **Data Persistence**: Add save/load game functionality
+2. **More Events**: Add random events that affect the game
+3. **Graphical Interface**: Use web technologies to create graphical interface
+4. **Multiplayer Mode**: Support multiple players competing
+5. **More Complex Economic System**: Add loans, investments, and other features
